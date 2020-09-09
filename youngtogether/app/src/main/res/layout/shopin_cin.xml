@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/firebrick"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动详情"
+            android:textColor="@color/violet"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            app:srcCompat="@drawable/h8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textSize_18"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="青年之家活动
+" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_press_selecter"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginHorizontal="35dp"
+            app:srcCompat="@drawable/huodong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize_18"
+            android:text="名额" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="10dp"
+            android:adjustViewBounds="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/item_press_selecter"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginHorizontal="35dp"
+            app:srcCompat="@drawable/pinglun" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="时间"
+            android:textSize="@dimen/textSize_18" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/item_press_selecter"
+        android:clickable="true"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginHorizontal="36dp"
+            app:srcCompat="@drawable/xihuanlan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="地点"
+            android:textSize="@dimen/textSize_18" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/item_press_selecter"
+        android:clickable="true"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="33dp"
+            app:srcCompat="@drawable/laba" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="发布者"
+            android:textSize="@dimen/textSize_18" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/item_press_selecter"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginHorizontal="35dp"
+            app:srcCompat="@drawable/huodong" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="联系方式"
+            android:textSize="@dimen/textSize_18" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

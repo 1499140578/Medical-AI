@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="loading_into_height">30dp</dimen>
+    <dimen name="loading_into_width">60dp</dimen>
+    <dimen name="loading_into_margin">15dp</dimen>
+    <dimen name="loading_text_size">15dp</dimen>
+    <dimen name="loading_btn_radius_level">15dp</dimen>
+    <dimen name="jump_login_btn_size">28dp</dimen>
+    <dimen name="textSize_16">16dp</dimen>
+    <dimen name="textSize_18">18dp</dimen>
+    <dimen name="textSize_20">20dp</dimen>
+    <dimen name="login_app_name_size">45dp</dimen>
+    <dimen name="item_height">100dp</dimen>
+    <dimen name="item_img_height">90dp</dimen>
+    <dimen name="item_img_width">120dp</dimen>
+</resources>

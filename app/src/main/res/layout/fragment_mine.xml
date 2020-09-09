@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/light_gray"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginVertical="15dp"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/setting_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@drawable/setting" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="vertical">
+                <com.example.youngtogether.layout.CircleImageView
+                    android:id="@+id/head_img"
+                    android:layout_marginVertical="15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/account" />
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_marginVertical="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓名" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/item_press_selecter"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginHorizontal="35dp"
+                    app:srcCompat="@drawable/huodong" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/textSize_18"
+                    android:text="我的活动" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:adjustViewBounds="true"
+                    android:layout_marginHorizontal="10dp"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/item_press_selecter"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginHorizontal="35dp"
+                    app:srcCompat="@drawable/pinglun" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的点评"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:focusable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginHorizontal="36dp"
+                    app:srcCompat="@drawable/xihuanlan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的收藏"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:focusable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginRight="33dp"
+                    app:srcCompat="@drawable/laba" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="系统消息"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

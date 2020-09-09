@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/now_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="@string/no_login" />
+
+        <Button
+            android:id="@+id/now_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/bga_pp_selector_btn_confirm"
+            android:text="@string/login_now" />
+
+        <ImageView
+            android:id="@+id/no_more_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@mipmap/bga_pp_ic_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/login_bg"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/tag_home"
+            android:onClick="doClick"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.example.youngtogether.layout.CheckedImageLayout
+                android:id="@+id/tag_home_img"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="3dp"
+                android:src="@drawable/tag_home_selecter" />
+
+            <CheckedTextView
+                android:id="@+id/tag_home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@drawable/tag_text_selecter"
+                android:gravity="center"
+                android:text="@string/activity" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/tag_discuss"
+            android:onClick="doClick"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.youngtogether.layout.CheckedImageLayout
+                android:id="@+id/tag_discuss_img"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="3dp"
+                android:src="@drawable/tag_discuss_selecter" />
+
+            <CheckedTextView
+                android:id="@+id/tag_discuss_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@drawable/tag_text_selecter"
+                android:text="@string/discuss" />
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/tag_shop"
+            android:onClick="doClick"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.youngtogether.layout.CheckedImageLayout
+                android:id="@+id/tag_shop_img"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="3dp"
+                android:src="@drawable/tag_discuss_selecter" />
+
+            <CheckedTextView
+                android:id="@+id/tag_shop_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@drawable/tag_text_selecter"
+                android:text="@string/shop" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/tag_mine"
+            android:onClick="doClick"
+            android:layout_marginVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <com.example.youngtogether.layout.CheckedImageLayout
+                android:id="@+id/tag_mine_img"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:layout_marginVertical="3dp"
+                android:src="@drawable/tag_mine_selecter" />
+
+            <CheckedTextView
+                android:id="@+id/tag_mine_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@drawable/tag_text_selecter"
+                android:text="@string/mine" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

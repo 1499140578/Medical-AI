@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btn_pop_album"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/out_app"
+            android:background="@color/white"
+            android:layout_marginBottom="0.6dp"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_pop_camera"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/only_login_out"
+            android:background="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_pop_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:text="取消"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

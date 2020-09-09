@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:orientation="vertical"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_space"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="10dp"
+            android:onClick="doClick"
+            app:srcCompat="@drawable/flow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="设置"
+            android:textSize="@dimen/textSize_18" />
+
+        <View
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_margin="10dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/account_manage"
+                android:onClick="doClick"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/account_manage"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/account_self"
+                android:onClick="doClick"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/account_self"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/accept_push"
+                    android:textSize="@dimen/textSize_18" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/push"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/default_setting"
+                android:onClick="doClick"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/default_setting"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/check_update"
+                android:layout_width="match_parent"
+                android:onClick="doClick"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/check_update"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:id="@+id/update_img"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/zuixin" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/suggestion"
+                android:layout_width="match_parent"
+                android:onClick="doClick"
+                android:layout_height="45dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/suggestion"
+                    android:textSize="@dimen/textSize_18" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clean_cache"
+                android:onClick="doClick"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/clean_cache"
+                    android:textSize="@dimen/textSize_18" />
+
+                <TextView
+                    android:id="@+id/cache_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0MB" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:adjustViewBounds="true"
+                    app:srcCompat="@drawable/you" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/login_out"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/item_press_selecter"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:gravity="center"
+                android:onClick="doClick"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:text="@string/out_app"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textSize_18" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
