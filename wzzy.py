@@ -12,7 +12,7 @@ import os
 path_list = os.listdir()
 path_name=[]
 for i in path_list:
-	if i.split(".")[1] == 'xlsx':
+	if i.endswith('.xlsx'):
 		path_name.append(i.split(".")[0])
 zhuanjiaXZ=st.selectbox('请选择一个专家AI:',(path_name))
 zhuangjiaXZ_file=str(zhuanjiaXZ)+'.xlsx'
@@ -22,8 +22,8 @@ Sheet1 = wb["Sheet1"]
 zhenzhuang=set()
 st.write(Sheet1.cell(1,1).value)
 qzyz = Sheet1.cell(1,12).value     #从表中读取权重因子
-if qzyz <0 or qzyz>1 :
-	qzyz =0.2
+if qzyz < 0 or qzyz > 1 :
+	qzyz = 0.2
 for i in range(3,Sheet1.max_row+1):
 	for j in range(1,11):
 		zhenzhuang.add(Sheet1.cell(i,j).value)
