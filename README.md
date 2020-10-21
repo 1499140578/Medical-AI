@@ -19,6 +19,10 @@
 * Python：3.7+
 * Python库：见requirements.txt
 
+## 问题
+
+* 如果导入代码出现`Could not initialize class org.codehaus.groovy.classgen.Verifier`错误。该错误发生的原因是JDK的版本和Gradle适用的版本不匹配导致的。对于使用Idea的开发者，请在设置中手动指定Gradle的版本
+
 ## TO-DO List
 
 1. 基于SpringBoot + MySQL的方式构建基本的后端服务程序
